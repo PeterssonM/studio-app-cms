@@ -6,6 +6,12 @@ export default defineType({
   type: 'document',
   fields: [
     {
+      name: 'priority',
+      title: 'Priority',
+      type: 'number',
+      description: 'Lower numbers show first',
+    },
+    {
       name: 'programName',
       title: 'Program Name',
       type: 'string',

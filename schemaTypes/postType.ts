@@ -6,6 +6,12 @@ export default defineType({
   type: 'document',
   fields: [
     {
+      name: 'priority',
+      title: 'Priority',
+      type: 'number',
+      description: 'Lower numbers show first',
+    },
+    {
       name: 'title',
       title: 'Title',
       type: 'string',
@@ -30,12 +36,13 @@ export default defineType({
       title: 'Labels',
       type: 'array',
       of: [{ type: 'string' }],
-      description: 'List some skills/framewroks associated with this project',
+      description: 'List some skills/frameworks associated with this project',
     },
     {
       name: 'description',
       title: 'Description',
-      type: 'text',
+      type: 'array',
+      of: [{ type: 'block' }],
       description: 'Describe the project',
     },
     {

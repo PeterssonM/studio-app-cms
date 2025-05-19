@@ -11,9 +11,10 @@ export default defineType({
       type: 'string',
     },
     {
-      name: 'bio',
-      title: 'Biography',
-      type: 'text',
+      name: 'description',
+      title: 'Description',
+      type: 'array',
+      of: [{ type: 'block' }],
       description: 'A short introduction or background text',
     },
     {
