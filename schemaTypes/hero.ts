@@ -6,6 +6,12 @@ export default defineType({
   type: 'document',
   fields: [
     {
+      name: 'isOpenToWork',
+      title: 'Is Open to Work?',
+      type: 'boolean',
+      description: 'Am I open to work? Then tick this.',
+    },
+    {
       name: 'labels',
       title: 'Labels',
       type: 'array',
